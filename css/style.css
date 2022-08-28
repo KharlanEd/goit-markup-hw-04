@@ -189,13 +189,19 @@ p {
 /* Section promo */
 
 .promo {
+    max-width: 1600px;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
 
 
+
     background-color: #2F303A;
 
-    background-image: linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)),url(../images/Img.jpg);
+    background-image: linear-gradient(to right, rgba(47,48,58,0.4),rgba(47,48,58,0.4)),url(../images/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .promo-title {
@@ -272,12 +278,13 @@ p {
 }
 
 .content-card {
-
+    width: 270px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F5F4FA;
-    padding: 20px 100px;
+    
     border-radius: 4px;
 
 }
@@ -493,11 +500,15 @@ img {
 }
 
 .address {
-    font-style: normal;
+    
 
     display: flex;
     align-items: baseline;
     gap: 70px;
+}
+
+address {
+    font-style: normal;
 }
 
 
@@ -584,7 +595,7 @@ img {
 
 .btn-item {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     column-gap: 8px;
     justify-content: center;
 }
@@ -633,8 +644,12 @@ img {
 
 }
 
-.catalog-item:hover,
-.catalog-item:focus {
+.catalog-link {
+    display: block;
+}
+
+.catalog-link:hover,
+.catalog-link:focus {
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
